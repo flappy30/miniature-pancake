@@ -54,3 +54,5 @@ func divide(a float64, b float64) {
 	fmt.Println("Ответ ")
 	fmt.Printf("%.2f", div)
 }
+
+// норм калькулятор
