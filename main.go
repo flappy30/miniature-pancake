@@ -7,6 +7,11 @@ var b float64
 var action string
 
 func main() {
+	defer func ()  {
+		fmt.Println("")
+		fmt.Println("end program")
+	}()
+
 	calculator()
 }
 
@@ -34,25 +39,25 @@ func calculator() {
 func amount(a float64, b float64) {
 	sum := a+b
 	fmt.Println("Ответ ")
-	fmt.Printf("%.2f", sum)
+	fmt.Printf("%.2f\n", sum)
 }
 
 func subtraction(a float64, b float64) {
 	sub := a-b
 	fmt.Println("Ответ ")
-	fmt.Printf("%.2f", sub)
+	fmt.Printf("%.2f\n", sub)
 }
 
 func multiply(a float64, b float64) {
 	mul := a*b
 	fmt.Println("Ответ ")
-	fmt.Printf("%.2f", mul)
+	fmt.Printf("%.2f\n", mul)
 }
 
 func divide(a float64, b float64) {
 	div := a/b
 	fmt.Println("Ответ ")
-	fmt.Printf("%.2f", div)
+	fmt.Printf("%.2f\n", div)
 }
 
 // норм калькулятор
